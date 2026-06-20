@@ -1,0 +1,14 @@
+.ascii-portrait {
+  display: block;
+  width: 100%;
+  max-width: 312px;
+  height: auto;
+  cursor: crosshair;
+}
+
+@media (max-width: 768px) {
+  .ascii-portrait {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}

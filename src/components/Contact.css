@@ -1,0 +1,37 @@
+.contact.section {
+  padding: var(--section-pad) 0;
+  padding-bottom: calc(var(--section-pad) * 2);
+}
+
+.contact__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.contact__copy {
+  font-size: clamp(15px, 1.6vw, 17px);
+  color: var(--slate);
+  line-height: 1.75;
+}
+
+.contact__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 18px 60px;
+  transition: background var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.contact__btn:hover {
+  background: var(--accent-dim);
+  transform: translateY(-2px);
+}
