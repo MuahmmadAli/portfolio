@@ -34,7 +34,7 @@ const projects = [
     title: 'Task and Notes API',
     desc: 'A CRUD REST API for tasks and notes, built to learn backend fundamentals that Firebase normally abstracts away: request validation, data modeling, persistence. In progress.',
     tech: ['Python', 'FastAPI'],
-    github: 'https://github.com/MuahmmadAli/task-notes-api',
+    // TODO: add GitHub URL once repo is published
   },
   {
     title: 'Wayfair Supply Chain Agents',
