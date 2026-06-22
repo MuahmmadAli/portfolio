@@ -37,11 +37,12 @@ export default function AsciiPortrait({ reducedMotion }) {
       off.height = ROWS;
       const offCtx = off.getContext('2d');
 
-      // Crop: skip top 12% (wooden ceiling), focus on face/head area
-      const sx = img.width * 0.04;
-      const sy = img.height * 0.12;
-      const sw = img.width * 0.92;
-      const sh = img.height * 0.72;
+      // Crop: face centered, skip top 5% and bottom 20% (shoulders/body)
+      // Optimised for close portrait with bright background (house siding)
+      const sx = img.width * 0.03;
+      const sy = img.height * 0.05;
+      const sw = img.width * 0.94;
+      const sh = img.height * 0.75;
       offCtx.drawImage(img, sx, sy, sw, sh, 0, 0, COLS, ROWS);
 
       const { data } = offCtx.getImageData(0, 0, COLS, ROWS);
@@ -62,7 +63,7 @@ export default function AsciiPortrait({ reducedMotion }) {
           const vig = Math.max(0, 1 - d * 0.85);
 
           const eff = lum * vig;
-          if (eff < 0.04) continue;
+          if (eff < 0.06) continue;
 
           const ci = Math.min(CHAR_LEN - 1, Math.floor(eff * CHAR_LEN));
           const bx = col * GRID + GRID * 0.5;
