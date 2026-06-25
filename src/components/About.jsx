@@ -62,7 +62,7 @@ export default function About() {
         <div className="about__photo-wrap">
           <div className="about__photo-frame">
             <img
-              src="/ali-photo.jpeg"
+              src="/ali-about.jpeg"
               alt="Muhammad Ali"
               className="about__photo"
               loading="lazy"
