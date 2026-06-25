@@ -1,13 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="12" fill="#0a192f"/>
-  <text
-    x="32"
-    y="44"
-    font-family="'Inter', 'SF Pro Display', system-ui, sans-serif"
-    font-size="26"
-    font-weight="600"
-    fill="#64ffda"
-    text-anchor="middle"
-    letter-spacing="-1"
-  >MA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="22" fill="#e2e2e2"/>
+
+  <!-- Suit body left -->
+  <path d="M5 100 L5 68 L38 56 L50 70 L50 100 Z" fill="#2d3436"/>
+  <!-- Suit body right -->
+  <path d="M95 100 L95 68 L62 56 L50 70 L50 100 Z" fill="#2d3436"/>
+
+  <!-- White shirt V -->
+  <path d="M50 56 L40 68 L50 100 L60 68 Z" fill="#f0f0f0"/>
+
+  <!-- Orange tie -->
+  <path d="M50 62 L46 75 L50 84 L54 75 Z" fill="#e67e22"/>
+  <!-- Tie knot -->
+  <rect x="47" y="59" width="6" height="5" rx="1" fill="#d35400"/>
+
+  <!-- Neck -->
+  <rect x="44" y="46" width="12" height="14" rx="4" fill="#e8952a"/>
+
+  <!-- Head -->
+  <circle cx="50" cy="33" r="22" fill="#f0a030"/>
+  <!-- Face highlight -->
+  <ellipse cx="46" cy="28" rx="8" ry="10" fill="#f5b84a" opacity="0.35"/>
+
+  <!-- Hair base (covering top of head) -->
+  <path d="M28 31 Q27 12 50 11 Q73 12 72 31 Q66 17 58 14 Q50 10 42 14 Q33 17 28 31Z" fill="#2d3748"/>
+  <!-- Hair curl/swoop right -->
+  <path d="M67 17 Q75 9 73 21 Q72 13 67 17Z" fill="#2d3748"/>
+  <!-- Hair left side -->
+  <path d="M28 31 Q25 22 29 17 Q26 23 28 31Z" fill="#2d3748"/>
+
+  <!-- Left glasses lens -->
+  <circle cx="39" cy="34" r="8.5" fill="#27ae60"/>
+  <circle cx="39" cy="34" r="8.5" fill="none" stroke="#2d3748" stroke-width="1.8"/>
+
+  <!-- Right glasses lens -->
+  <circle cx="61" cy="34" r="8.5" fill="#27ae60"/>
+  <circle cx="61" cy="34" r="8.5" fill="none" stroke="#2d3748" stroke-width="1.8"/>
+
+  <!-- Glasses bridge -->
+  <line x1="47.5" y1="34" x2="52.5" y2="34" stroke="#2d3748" stroke-width="1.8"/>
+
+  <!-- Glasses left arm -->
+  <line x1="30.5" y1="33" x2="27" y2="31" stroke="#2d3748" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Glasses right arm -->
+  <line x1="69.5" y1="33" x2="73" y2="31" stroke="#2d3748" stroke-width="1.8" stroke-linecap="round"/>
 </svg>
